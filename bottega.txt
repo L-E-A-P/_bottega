@@ -1,0 +1,28 @@
+.
+├── LICENSE
+├── README.md
+├── bottega.txt
+└── interventi
+    └── mb
+        ├── mb-1980-01
+        │   ├── LEAP170725BR0001.aux
+        │   ├── LEAP170725BR0001.log
+        │   ├── LEAP170725BR0001.out
+        │   ├── LEAP170725BR0001.pdf
+        │   └── LEAP170725BR0001.tex
+        ├── mb-1990-01
+        │   ├── LEAP190725BR0002.aux
+        │   ├── LEAP190725BR0002.log
+        │   ├── LEAP190725BR0002.out
+        │   ├── LEAP190725BR0002.pdf
+        │   └── LEAP190725BR0002.tex
+        ├── mb-1990-02
+        │   ├── LEAP190725BR0003.aux
+        │   ├── LEAP190725BR0003.log
+        │   ├── LEAP190725BR0003.out
+        │   ├── LEAP190725BR0003.pdf
+        │   └── LEAP190725BR0003.tex
+        ├── mb-1990-03
+        └── mb-1990-04
+
+8 directories, 18 files
