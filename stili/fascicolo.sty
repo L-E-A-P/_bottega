@@ -1,0 +1,97 @@
+%% fascicolo.sty - Stile per cartelle fisiche LEAP
+%% Versione 1.0 - 7 Agosto 2025
+%% Autore: LEAP - Laboratorio Elettroacustico Permanente
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fascicolo}[2025/08/07 v1.0 Stile fascicoli LEAP]
+
+% Pacchetti richiesti
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[italian]{babel}
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\usetikzlibrary{calc}
+
+% Font OCR-A
+\newfont{\ocrfontsmall}{ocr10 at 8pt}
+\newfont{\ocrfontnormal}{ocr10}
+\newfont{\ocrfontlarge}{ocr10 at 14pt}
+\newfont{\ocrfonthuge}{ocr10 at 18pt}
+
+% Comandi OCR-A semplificati
+\newcommand{\ocr}[1]{{\ocrfontnormal #1}}
+\newcommand{\ocrsmall}[1]{{\ocrfontsmall #1}}
+\newcommand{\ocrlarge}[1]{{\ocrfontlarge #1}}
+\newcommand{\ocrhuge}[1]{{\ocrfonthuge #1}}
+
+% Variabili per i dati del fascicolo
+\newcommand{\fascicolocodice}[1]{\def\@fascicolocodice{#1}}
+\newcommand{\fascicolotitolo}[1]{\def\@fascicolotitolo{#1}}
+\newcommand{\fascicolotipologia}[1]{\def\@fascicolotipologia{#1}}
+\newcommand{\fascicoloautore}[1]{\def\@fascicoloautore{#1}}
+\newcommand{\fascicololuogo}[1]{\def\@fascicololuogo{#1}}
+\newcommand{\fascicoloanno}[1]{\def\@fascicoloanno{#1}}
+
+% Valori di default
+\fascicolocodice{CODICE-NON-DEFINITO}
+\fascicolotitolo{TITOLO NON DEFINITO}
+\fascicolotipologia{TIPOLOGIA}
+\fascicoloautore{AUTORE}
+\fascicololuogo{LUOGO, NAZIONE}
+\fascicoloanno{ANNO}
+
+% Percorso relativo per il logo (calcolato dalla posizione del fascicolo)
+\newcommand{\fascicolologo}[1]{\def\@fascicolologo{#1}}
+
+% Comando principale per creare il fascicolo
+\newcommand{\creaFascicolo}{%
+    \begin{tikzpicture}
+        % Struttura base della cartella
+        \draw[magenta, thin] (0,0) -- (-24,0);
+        \draw[magenta, thin] (-24,33) -- (0,33) -- (0,0); % copertina
+        \draw[magenta, thin] (-24,0) -- (-48,0) -- (-48,33) -- (-24,33); % fondo
+        \draw[magenta, thin] (-48,0) -- (-55,2) -- (-55, 31) -- (-48,33); % lembo lungo
+        \draw[magenta, thin] (-27,33) -- (-29,40) -- (-46, 40) -- (-48,33); % lembo sopra
+        \draw[magenta, thin] (-27,0) -- (-29,-7) -- (-46, -7) -- (-48,0); % lembo sotto
+
+        % Codice identificativo verticale (es: MB-1980-01)
+        \node[rotate=90, anchor=center, magenta] at (-24,16.5) {%
+            \font\tempocr=ocr10 at 123pt \tempocr \@fascicolocodice%
+        };
+
+        % Logo LEAP
+        \node[rotate=90, anchor=center, scale=0.123] (logo) at (-51.5,16.5) {%
+            \includegraphics[]{\@fascicolologo}%
+        };
+
+        % Informazioni strumento
+        \node[anchor=center, magenta] at (-12,20) {%
+            \font\tempocr=ocr10 at 51pt \tempocr \@fascicolotitolo%
+        };
+        \node[anchor=center, magenta] at (-12,18) {%
+            \font\tempocr=ocr10 at 33pt \tempocr \@fascicolotipologia%
+        };
+        \node[anchor=center, magenta] at (-12,17) {%
+            \font\tempocr=ocr10 at 33pt \tempocr \@fascicoloautore%
+        };
+        \node[anchor=center, magenta] at (-12,16) {%
+            \font\tempocr=ocr10 at 33pt \tempocr \@fascicololuogo%
+        };
+        \node[anchor=center, magenta] at (-12,15) {%
+            \font\tempocr=ocr10 at 33pt \tempocr \@fascicoloanno%
+        };
+    \end{tikzpicture}%
+}
+
+% Comando di utilità per impostare tutti i dati in una volta
+\newcommand{\impostaFascicolo}[6]{%
+    \fascicolocodice{#1}%
+    \fascicolotitolo{#2}%
+    \fascicolotipologia{#3}%
+    \fascicoloautore{#4}%
+    \fascicololuogo{#5}%
+    \fascicoloanno{#6}%
+}
+
+\endinput

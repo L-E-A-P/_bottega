@@ -1,0 +1,110 @@
+%% note.sty - Stile per quaderni di lavoro LEAP
+%% Versione 1.0 - 7 Agosto 2025
+%% Autore: LEAP - Laboratorio Elettroacustico Permanente
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{note}[2025/08/07 v1.0 Stile note LEAP]
+
+% Pacchetti richiesti
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[italian]{babel}
+\RequirePackage{AlegreyaSans}
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{xcolor}
+\RequirePackage{atbegshi}
+\usetikzlibrary{calc}
+
+% Attiva AlegreyaSans come font di default (solo se non già impostato)
+\@ifundefined{familydefault}{}{%
+    \renewcommand{\familydefault}{\sfdefault}%
+}
+
+% Geometria pagina con spazio per codice verticale (solo se geometry non già caricato)
+\@ifpackageloaded{geometry}{}{%
+    \RequirePackage[left=3cm, right=2cm, top=0.7cm, bottom=0.7cm]{geometry}%
+    \addtolength{\oddsidemargin}{1cm}%
+}
+
+% Colori
+\definecolor{lightgray}{RGB}{220,220,220}
+
+% Font OCR-A
+\newfont{\ocrfontsmall}{ocr10 at 8pt}
+\newfont{\ocrfontnormal}{ocr10}
+\newfont{\ocrfontlarge}{ocr10 at 14pt}
+\newfont{\ocrfonthuge}{ocr10 at 18pt}
+
+% Comandi OCR-A semplificati
+\newcommand{\ocr}[1]{{\ocrfontnormal #1}}
+\newcommand{\ocrsmall}[1]{{\ocrfontsmall #1}}
+\newcommand{\ocrlarge}[1]{{\ocrfontlarge #1}}
+\newcommand{\ocrhuge}[1]{{\ocrfonthuge #1}}
+
+% Comando per il codice identificativo verticale
+\newcommand{\codiceverticale}[1]{%
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[rotate=90, anchor=south] at ($(current page.west) + (3cm, 0cm)$) {%
+            {\font\tempocr=ocr10 at 81pt \tempocr #1}%
+        };
+    \end{tikzpicture}%
+}
+
+% Griglia di sfondo per tutte le pagine
+\AtBeginShipout{%
+    \AtBeginShipoutUpperLeft{%
+        \begin{tikzpicture}[remember picture, overlay]
+            \draw[lightgray, thin, step=0.5cm]
+                (current page.south west) grid (current page.north east);
+        \end{tikzpicture}%
+    }%
+}
+
+% Variabili per i dati delle note
+\newcommand{\notecodice}[1]{\def\@notecodice{#1}}
+\newcommand{\notedata}[1]{\def\@notedata{#1}}
+\newcommand{\notestrumentocodice}[1]{\def\@notestrumentocodice{#1}}
+\newcommand{\notestrumentonome}[1]{\def\@notestrumentonome{#1}}
+\newcommand{\notestrumentotipologia}[1]{\def\@notestrumentotipologia{#1}}
+
+% Valori di default
+\notecodice{LEAP000000BR0000}
+\notedata{\today}
+\notestrumentocodice{CODICE-00}
+\notestrumentonome{Nome strumento}
+\notestrumentotipologia{Tipologia}
+
+% Intestazione note di bottega
+\newcommand{\intestazioneNote}{%
+    {\Huge\bfseries\noindent NOTE DI BOTTEGA}\\[0.5em]
+    {\large LEAP - LABORATORIO ELETTROACUSTICO PERMANENTE, ROMA}\\
+    DATA: \@notedata \hspace{1cm} ORARIO INIZIO: \hspace{2.5cm} ORARIO FINE:\\
+    \\
+    \noindent\ocrlarge{\@notestrumentocodice}\\
+    \@notestrumentonome{} - \@notestrumentotipologia\\
+}
+
+% Comando principale per creare le note
+\newcommand{\creaNote}{%
+    \thispagestyle{empty}
+    \codiceverticale{\@notecodice}
+    \intestazioneNote
+
+    % Spazio per le note manuali
+    \clearpage
+    \null
+}
+
+% Comando per impostare tutti i dati in una volta
+\newcommand{\impostaNote}[5]{%
+    \notecodice{#1}%
+    \notedata{#2}%
+    \notestrumentocodice{#3}%
+    \notestrumentonome{#4}%
+    \notestrumentotipologia{#5}%
+}
+
+\endinput

@@ -1,0 +1,196 @@
+%% intervento.sty - Stile per schede interventi LEAP
+%% Versione 1.0 - 7 Agosto 2025
+%% Autore: LEAP - Laboratorio Elettroacustico Permanente
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{intervento}[2025/08/07 v1.0 Stile interventi LEAP]
+
+% Pacchetti richiesti
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[italian]{babel}
+\RequirePackage{AlegreyaSans}
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{multirow}
+\RequirePackage{booktabs}
+\RequirePackage{colortbl}
+\RequirePackage{xcolor}
+\RequirePackage{enumitem}
+\RequirePackage{qrcode}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{url}
+\usetikzlibrary{calc}
+
+% Attiva AlegreyaSans come font di default (solo se non già impostato)
+\@ifundefined{familydefault}{}{%
+    \renewcommand{\familydefault}{\sfdefault}%
+}
+
+% Geometria pagina con spazio per codice verticale (solo se geometry non già caricato)
+\@ifpackageloaded{geometry}{}{%
+    \RequirePackage[left=3cm, right=2cm, top=0.7cm, bottom=0.7cm]{geometry}%
+    \addtolength{\oddsidemargin}{1cm}%
+}
+
+% Colori per il report
+\definecolor{headcolor}{RGB}{40,40,40}
+\definecolor{fieldcolor}{RGB}{245,245,245}
+\definecolor{lightgray}{RGB}{220,220,220}
+
+% Font OCR-A
+\newfont{\ocrfontsmall}{ocr10 at 8pt}
+\newfont{\ocrfontnormal}{ocr10}
+\newfont{\ocrfontlarge}{ocr10 at 14pt}
+\newfont{\ocrfonthuge}{ocr10 at 18pt}
+
+% Comandi OCR-A semplificati
+\newcommand{\ocr}[1]{{\ocrfontnormal #1}}
+\newcommand{\ocrsmall}[1]{{\ocrfontsmall #1}}
+\newcommand{\ocrlarge}[1]{{\ocrfontlarge #1}}
+\newcommand{\ocrhuge}[1]{{\ocrfonthuge #1}}
+
+% Comando per il codice identificativo verticale
+\newcommand{\codiceverticale}[1]{%
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[rotate=90, anchor=south] at ($(current page.west) + (3cm, 0cm)$) {%
+            {\font\tempocr=ocr10 at 81pt \tempocr #1}%
+        };
+    \end{tikzpicture}%
+}
+
+% Variabili per i dati dell'intervento
+\newcommand{\interventocodice}[1]{\def\@interventocodice{#1}}
+\newcommand{\interventodata}[1]{\def\@interventodata{#1}}
+\newcommand{\strumentonome}[1]{\def\@strumentonome{#1}}
+\newcommand{\strumentotipologia}[1]{\def\@strumentotipologia{#1}}
+\newcommand{\strumentoautore}[1]{\def\@strumentoautore{#1}}
+\newcommand{\strumentoanno}[1]{\def\@strumentoanno{#1}}
+\newcommand{\strumentoluogo}[1]{\def\@strumentoluogo{#1}}
+\newcommand{\strumentoproprietario}[1]{\def\@strumentoproprietario{#1}}
+\newcommand{\strumentodeposito}[1]{\def\@strumentodeposito{#1}}
+\newcommand{\strumentoinventario}[1]{\def\@strumentoinventario{#1}}
+\newcommand{\strumentovalore}[1]{\def\@strumentovalore{#1}}
+\newcommand{\interventodescrizione}[1]{\def\@interventodescrizione{#1}}
+\newcommand{\interventomateriali}[1]{\def\@interventomateriali{#1}}
+\newcommand{\interventodurata}[1]{\def\@interventodurata{#1}}
+\newcommand{\interventoqr}[1]{\def\@interventoqr{#1}}
+
+% Valori di default
+\interventocodice{LEAP000000BR0000}
+\interventodata{\today}
+\strumentonome{Nome strumento non definito}
+\strumentotipologia{Tipologia}
+\strumentoautore{Autore}
+\strumentoanno{Anno}
+\strumentoluogo{Luogo}
+\strumentoproprietario{Proprietario}
+\strumentodeposito{Deposito}
+\strumentoinventario{CODICE-00}
+\strumentovalore{€ 0}
+\interventodescrizione{Interventi da definire}
+\interventomateriali{Materiali da definire}
+\interventodurata{Durata da definire}
+\interventoqr{https://example.com}
+
+% Comandi di utilità per tabelle
+\newcommand{\campo}[2]{%
+    \noindent\textbf{#1:} #2\\[0.3em]
+}
+
+\newcommand{\campotabella}[2]{%
+    \rowcolor{fieldcolor}\textbf{#1} & #2 \\
+}
+
+% Intestazione standard LEAP
+\newcommand{\intestazioneIntervento}{%
+    {\Huge\bfseries\noindent INTERVENTI DI BOTTEGA}\\[0.5em]
+    {\large LEAP - LABORATORIO ELETTROACUSTICO PERMANENTE, ROMA}\\
+    \@interventodata
+}
+
+% Sezione identificazione strumento
+\newcommand{\sezioneIdentificazione}{%
+    \section*{IDENTIFICAZIONE}
+    \begin{tabularx}{\textwidth}{lX}
+        Nome Strumento & \@strumentonome \\
+        Tipologia & \@strumentotipologia \\
+        Autore & \@strumentoautore \\
+        Anno di Costruzione & \@strumentoanno \\
+        Luogo di Costruzione & \@strumentoluogo \\
+        Proprietario & \@strumentoproprietario \\
+        Deposito & \@strumentodeposito \\
+        Numero di Inventario & \ocr{\@strumentoinventario} \\
+        Valore Stimato & \@strumentovalore \\
+    \end{tabularx}
+}
+
+% Sezione interventi
+\newcommand{\sezioneInterventi}{%
+    \section*{INTERVENTI}
+    \begin{tabularx}{\textwidth}{lX}
+        \@interventodescrizione
+    \end{tabularx}
+}
+
+% Sezione materiali
+\newcommand{\sezioneMateriali}{%
+    \subsection*{MATERIALI}
+    \begin{tabularx}{\textwidth}{X}
+        \@interventomateriali
+    \end{tabularx}
+}
+
+% Sezione durata
+\newcommand{\sezioneDurata}{%
+    \subsection*{DURATA}
+    \@interventodurata
+}
+
+% QR Code in basso a destra
+\newcommand{\qrcodeIntervento}{%
+    \vfill\null
+    \begin{flushright}
+        \href{\@interventoqr}{
+            \qrcode[height=7cm]{\@interventoqr}
+        }
+    \end{flushright}
+}
+
+% Comando principale per creare l'intervento completo
+\newcommand{\creaIntervento}{%
+    \thispagestyle{empty}
+    \codiceverticale{\@interventocodice}
+    \intestazioneIntervento
+    \sezioneIdentificazione
+    \sezioneInterventi
+    \sezioneMateriali
+    \sezioneDurata
+    \qrcodeIntervento
+}
+
+% Comando per impostare tutti i dati strumento in una volta
+\newcommand{\impostaStrumento}[8]{%
+    \strumentonome{#1}%
+    \strumentotipologia{#2}%
+    \strumentoautore{#3}%
+    \strumentoanno{#4}%
+    \strumentoluogo{#5}%
+    \strumentoproprietario{#6}%
+    \strumentodeposito{#7}%
+    \strumentoinventario{#8}%
+}
+
+% Comando per impostare i dati dell'intervento
+\newcommand{\impostaIntervento}[6]{%
+    \interventocodice{#1}%
+    \interventodata{#2}%
+    \strumentovalore{#3}%
+    \interventodescrizione{#4}%
+    \interventomateriali{#5}%
+    \interventodurata{#6}%
+}
+
+\endinput

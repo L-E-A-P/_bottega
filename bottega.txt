@@ -1,11 +1,9 @@
 .
 ├── 2025-07-23-logo-kern-magenta.pdf
 ├── LICENSE
-├── Makefile
 ├── README.md
 ├── bottega.txt
-├── fascicoli
-│   └── fascicolo.tex
+├── compile.sh
 ├── interventi
 │   └── mb
 │       ├── LEAP-NOTE-SPESE.pdf
@@ -16,34 +14,29 @@
 │       │   │   ├── LEAP170725BR0001-note.tex
 │       │   │   ├── LEAP170725BR0001.pdf
 │       │   │   └── LEAP170725BR0001.tex
-│       │   ├── Makefile
 │       │   └── fascicolo
 │       │       ├── mb-1980-01-grande-spirale.pdf
 │       │       └── mb-1980-01-grande-spirale.tex
 │       ├── mb-1980-02-kathedrale
 │       │   └── fascicolo
-│       │       ├── mb-1980-02-kathedrale.aux
-│       │       ├── mb-1980-02-kathedrale.log
 │       │       ├── mb-1980-02-kathedrale.pdf
-│       │       ├── mb-1980-02-kathedrale.synctex.gz
 │       │       └── mb-1980-02-kathedrale.tex
 │       ├── mb-1980-03-arpa-circolare
 │       │   └── fascicolo
 │       │       ├── mb-1980-03-arpa-circolare.pdf
 │       │       └── mb-1980-03-arpa-circolare.tex
 │       ├── mb-1980-04-barre-ricambio
-│       │   ├── LEAP250725BR0006
-│       │   │   ├── LEAP250725BR0006-note.pdf
-│       │   │   ├── LEAP250725BR0006-note.tex
-│       │   │   └── LEAP250725BR0006.tex
-│       │   └── Makefile
+│       │   └── LEAP250725BR0006
+│       │       ├── LEAP250725BR0006-note.pdf
+│       │       ├── LEAP250725BR0006-note.tex
+│       │       ├── LEAP250725BR0006.pdf
+│       │       └── LEAP250725BR0006.tex
 │       ├── mb-1990-01-violino-I
 │       │   ├── LEAP190725BR0002
 │       │   │   ├── LEAP190725BR0002-note.pdf
 │       │   │   ├── LEAP190725BR0002-note.tex
 │       │   │   ├── LEAP190725BR0002.pdf
 │       │   │   └── LEAP190725BR0002.tex
-│       │   ├── Makefile
 │       │   └── fascicolo
 │       │       ├── mb-1990-01-violino-I.pdf
 │       │       └── mb-1990-01-violino-I.tex
@@ -53,7 +46,6 @@
 │       │   │   ├── LEAP190725BR0003-note.tex
 │       │   │   ├── LEAP190725BR0003.pdf
 │       │   │   └── LEAP190725BR0003.tex
-│       │   ├── Makefile
 │       │   └── fascicolo
 │       │       ├── mb-1990-02-violino-II.pdf
 │       │       └── mb-1990-02-violino-II.tex
@@ -61,8 +53,8 @@
 │       │   ├── LEAP210725BR0004
 │       │   │   ├── LEAP210725BR0004-note.pdf
 │       │   │   ├── LEAP210725BR0004-note.tex
+│       │   │   ├── LEAP210725BR0004.pdf
 │       │   │   └── LEAP210725BR0004.tex
-│       │   ├── Makefile
 │       │   └── fascicolo
 │       │       ├── mb-1990-03-viola.pdf
 │       │       └── mb-1990-03-viola.tex
@@ -70,15 +62,12 @@
 │           ├── LEAP210725BR0005
 │           │   ├── LEAP210725BR0005-note.pdf
 │           │   ├── LEAP210725BR0005-note.tex
+│           │   ├── LEAP210725BR0005.pdf
 │           │   └── LEAP210725BR0005.tex
-│           ├── Makefile
 │           └── fascicolo
 │               ├── mb-1990-04-violoncello.pdf
 │               └── mb-1990-04-violoncello.tex
-├── setup.sh
 └── templates
-    ├── Makefile.instrument
-    ├── Makefile.root
     └── template-report.tex
 
-26 directories, 56 files
+25 directories, 46 files
