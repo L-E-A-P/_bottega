@@ -395,3 +395,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,latex,jekyll
+
+# File oltre il limite GitHub di 100 MB: restano solo in archivio locale
+# (verranno pubblicati via YouTube, non via git)
+img/anapnoe-somafonico-petalonio/2025-04-30/gs/25-04-30 15-45-15 8784.mov
