@@ -7,9 +7,9 @@ image:
   caption: ""
 ---
 
-STONED è un altoparlante con sistema di diffusione sferica/tetraedrica di
+STONED è un sistema di ascolto omnidirezionale a diffusione tetraedrica di
 Giuseppe Silvi, concepito per un'installazione nell'ambito del Festival
-ArteScienza 2024. Dalle sessioni di costruzione.
+ArteScienza 2024.
 
 <!--more-->
 

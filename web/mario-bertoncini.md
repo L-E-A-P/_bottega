@@ -7,9 +7,7 @@ image:
   caption: ""
 ---
 
-La conservazione e il restauro degli strumenti della collezione Mario
-Bertoncini, dal prelievo alla riconsegna. Ogni intervento è documentato da un
-fascicolo: i PDF in coda al diario.
+*derive* su sculture di suono di Mario Bertoncini. Interventi e Note di Bottega.
 
 <!--more-->
 
