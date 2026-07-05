@@ -12,9 +12,7 @@ corpo/macchina/spazio — di Agostino Di Scipio.
 In bottega, stralci del lavoro condotto al LEAP insieme ad Agostino.
 <!--more-->
 
-Prima esecuzione assoluta il
-19 dicembre 2024 nell'ambito di Nuova Consonanza. In bottega, stralci del
-lavoro di ricerca condotto al LEAP insieme ad Agostino.
+Prima esecuzione assoluta il 19 dicembre 2024 nell'ambito di Nuova Consonanza.
 
 ## 8 giugno 2024
 
