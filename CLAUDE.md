@@ -70,3 +70,37 @@ interventi/<owner>/<owner>-<year>-<seq>-<instrument-name>/
 ### Style Path Resolution
 
 `.tex` files reference `.sty` files via `TEXINPUTS` or relative paths. The compile script runs `pdflatex` from each `.tex` file's own directory. Style files in `stili/` must be findable by pdflatex (symlinked or via `TEXINPUTS`).
+
+## Web (bottega sul sito)
+
+Le pagine del sito vivono in `web/` (collezione Jekyll `bottega` del repo
+principale, layout `project`; griglia in `/bottega/` ordinata per `date:`
+decrescente, URL dei post: `/bottega/web/<slug>/`). Un post per progetto,
+stesso slug della cartella immagini.
+
+Immagini in `img/<progetto>/<YYYY-MM-DD[-slug]>/<sigla>/{org,edit,thumb}/`
+(convenzione LEAP, stessi nomi file nelle tre cartelle; in `org/` l'estensione
+originale, in `edit/thumb` sempre `.jpg`) più:
+
+- `img/<progetto>/<progetto>-hero.jpg` (1600×800) e `<progetto>-t.jpg`
+  (800×800): hero e thumbnail del post (`tools/bottega/make-hero.py` del
+  repo principale, sorgente consigliata: la foto in `org/`).
+- `raw/` dentro una cartella-sigla: originali non processati (es. HEIC
+  pre-conversione). In git come archivio, MAI pubblicati.
+- `org/`, `raw/`, `*.mov`, `*.heic` sono esclusi dal sito via `exclude:`
+  nel `_config.yml` del repo principale (servono pattern a livello file,
+  es. `**/org/**`: le collezioni confrontano l'exclude coi percorsi dei file).
+
+Pipeline per sessione (dal repo principale):
+
+    tools/bottega/process-session.sh _bottega/img/<progetto>/<sessione> <sigla>
+
+(converte HEIC con originali in `raw/`, organizza `org/edit/thumb`, elimina i
+loose, watermarka `edit/`). `date:` del post = ultima sessione pubblicata.
+Sessioni nel post in ordine cronologico; un include gallery per
+cartella-sigla (il match `thumb/` non è ricorsivo). Le sessioni solo-video
+restano in archivio finché non esiste un canale di pubblicazione video.
+
+Nota: GitHub rifiuta file singoli > 100 MB (limite rigido, GH001). I video
+oltre soglia NON si committano: si aggiungono a `.gitignore` con nota e
+restano nell'archivio locale in attesa del canale YouTube.
