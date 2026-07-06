@@ -104,3 +104,20 @@ restano in archivio finché non esiste un canale di pubblicazione video.
 Nota: GitHub rifiuta file singoli > 100 MB (limite rigido, GH001). I video
 oltre soglia NON si committano: si aggiungono a `.gitignore` con nota e
 restano nell'archivio locale in attesa del canale YouTube.
+
+### Modificare gallerie già pubblicate
+
+- **Sfinimento** (togliere foto): metodo *demote, non delete* — spostare
+  `org/<sessione>-NN.<ext>` in `raw/`, eliminare SOLO `edit/` e `thumb/`
+  corrispondenti. Reversibile (da `raw/` si rigenerano edit+thumb+watermark
+  con lo stesso numero). Script `tools/bottega/cull.sh` in arrivo; a mano
+  finché non esiste.
+- **Mai rinumerare**: i `-NN` sono identificatori stabili, i buchi sono ok;
+  rinumerare cambierebbe URL già pubblicati.
+- **Aggiungere foto a sessione esistente**: `organize.py ... --start
+  <ultimo+1>`, poi watermark: le foto esistenti non si toccano.
+- **Nuova sessione a progetto esistente**: `process-session.sh` + heading e
+  include nel post + aggiornare `date:` (il progetto risale in griglia).
+- Raggruppare più modifiche in un solo giro commit→push→bump: una build
+  copre tutto. Dopo il deploy la cache CDN può servire le foto tolte per
+  ~10 minuti (max-age 600): non è un errore.
