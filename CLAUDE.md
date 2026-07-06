@@ -107,11 +107,11 @@ restano nell'archivio locale in attesa del canale YouTube.
 
 ### Modificare gallerie già pubblicate
 
-- **Sfinimento** (togliere foto): metodo *demote, non delete* — spostare
-  `org/<sessione>-NN.<ext>` in `raw/`, eliminare SOLO `edit/` e `thumb/`
-  corrispondenti. Reversibile (da `raw/` si rigenerano edit+thumb+watermark
-  con lo stesso numero). Script `tools/bottega/cull.sh` in arrivo; a mano
-  finché non esiste.
+- **Sfinimento** (togliere foto): metodo *demote, non delete* —
+  `tools/bottega/cull.sh <session-dir> <sigla> NN [NN ...]` (repo
+  principale): sposta `org/NN` in `raw/`, elimina solo `edit/` e `thumb/`.
+  Reversibile con `tools/bottega/restore.sh` (stessi argomenti): rigenera
+  edit+thumb+watermark dal file in `raw/`, con lo stesso numero.
 - **Mai rinumerare**: i `-NN` sono identificatori stabili, i buchi sono ok;
   rinumerare cambierebbe URL già pubblicati.
 - **Aggiungere foto a sessione esistente**: `organize.py ... --start
