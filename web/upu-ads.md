@@ -1,6 +1,6 @@
 ---
 title: "Umano Post Umano"
-date: 2024-09-14
+date: 2024-11-02
 image:
   path: bottega/img/upu-ads/upu-ads-hero.jpg
   thumbnail: bottega/img/upu-ads/upu-ads-t.jpg
@@ -21,3 +21,7 @@ Prima esecuzione assoluta il 19 dicembre 2024 nell'ambito di Nuova Consonanza.
 ## 14 settembre 2024
 
 {% include gallery path="bottega/img/upu-ads/2024-09-14-ads-leap/ac/" %}
+
+## 2 novembre 2024
+
+{% include gallery path="bottega/img/upu-ads/2024-11-02/ac/" %}
