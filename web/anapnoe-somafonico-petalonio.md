@@ -13,6 +13,14 @@ petalonio, il trombino per clarinetto contrabbasso che alloggia l'anapnoe.
 
 <!--more-->
 
+## 16 gennaio 2024
+
+{% include gallery path="bottega/img/anapnoe-somafonico-petalonio/2024-01-16/ac/" %}
+
+## 2 gennaio 2025
+
+{% include gallery path="bottega/img/anapnoe-somafonico-petalonio/2025-01-02/ac/" %}
+
 ## 22 aprile 2025
 
 {% include gallery path="bottega/img/anapnoe-somafonico-petalonio/2025-04-22/ac/" %}
