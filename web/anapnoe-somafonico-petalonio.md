@@ -1,5 +1,5 @@
 ---
-title: "Anapnoe, Somafonico, Petalonio"
+title: "Anapnòe, Somafonico, Petalonio"
 date: 2025-04-27
 image:
   path: bottega/img/anapnoe-somafonico-petalonio/anapnoe-somafonico-petalonio-hero.jpg
@@ -7,9 +7,9 @@ image:
   caption: ""
 ---
 
-Tre organismi elettroacustici per *Canto alla durata* di Giuseppe Silvi:
-anapnoe, sordina elettroacustica; somafonico, corpetto elettroacustico;
-petalonio, il trombino per clarinetto contrabbasso che alloggia l'anapnoe.
+dispositivi elettroacustici dal *canto alla durata* di Giuseppe Silvi:
+*anapnòe*, sordina elettroacustica; *somafonico*, corpetto elettroacustico;
+*petalonio*, il trombino per clarinetto contrabbasso culla di *anapnòe*.
 
 <!--more-->
 

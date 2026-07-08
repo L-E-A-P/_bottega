@@ -7,10 +7,16 @@ image:
   caption: ""
 ---
 
-*Infiniti Possibili* del GESR. Le sessioni di lavoro al LEAP, febbraio–marzo
-2024.
+Le sessioni di lavoro al LEAP attorno a *Infiniti Possibili* — il concerto
+del 1° marzo 2024 al Conservatorio di Musica S. Cecilia di Roma.
 
 <!--more-->
+
+*Infiniti Possibili* — titolo che arriva da Leibniz passando per Luigi
+Nono — raccoglie lavori recentissimi di studenti ed ex-studenti della
+Scuola di Musica Elettronica del Conservatorio. Aperto e chiuso da
+un'installazione sonora, il concerto s'inaugura con *Incontri di fasce
+sonore* di Franco Evangelisti, primo docente della Scuola.
 
 ## 15 febbraio 2024 — aedi
 
