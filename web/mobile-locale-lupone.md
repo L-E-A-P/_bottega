@@ -7,10 +7,13 @@ image:
   caption: ""
 ---
 
-*Mobile/Locale* di Michelangelo Lupone. Le sessioni di lavoro al LEAP,
-maggio–giugno 2024.
+LAZZARO a bottega sulle tracce di *Mobile/Locale* di Michelangelo Lupone.
 
 <!--more-->
+
+LAZZARO e _Mobile/Locale_ sono apparsi il [130724 a Roma](/lazzaro/web/2024-07-13-roma/)
+per il _Festival ArteScienza 2024_ ed il [101024 a L'Aquila](/lazzaro/web/2024-10-10-aquila/)
+per _elettroAQustica 9_.
 
 ## 27 maggio 2024
 

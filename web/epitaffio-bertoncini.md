@@ -16,6 +16,12 @@ Mario Bertoncini, settembre 2022.
 live-electronic: la scheda dell'opera è sul
 [sito di Mario Bertoncini](http://www.mariobertoncini.com/opere/epitaffioIT.html).
 
+L'esecuzione alla Fondazione Isabella Scelsi, nell'ambito di
+[*Mario Bertoncini: installazioni sonore a dialogo*](https://www.scelsi.it/it/mario-bertoncini-installazioni-sonore-a-dialogo/)
+(27–29 settembre 2022). A incidere l'*Epitaffio* — sulle tracce di
+Bertoncini, tra lavagna, rame e cassa di risonanza — John, Giuseppe e
+Leonardo; Edoardo, quarto esecutore, al tape-delay.
+
 ## 21 settembre 2022
 
 {% include gallery path="bottega/img/epitaffio-bertoncini/2022-09-21/ac/" %}
@@ -38,12 +44,7 @@ live-electronic: la scheda dell'opera è sul
 
 ## 28 settembre 2022 — Epitaffio
 
-L'esecuzione alla Fondazione Isabella Scelsi, nell'ambito di
-[*Mario Bertoncini: installazioni sonore a dialogo*](https://www.scelsi.it/it/mario-bertoncini-installazioni-sonore-a-dialogo/)
-(27–29 settembre 2022). A incidere l'*Epitaffio* — sulle tracce di
-Bertoncini, tra lavagna, rame e cassa di risonanza — John, Giuseppe e
-Leonardo; Edoardo, quarto esecutore, al tape-delay. Il
-[video dell'esecuzione](https://www.youtube.com/watch?v=Ktu_MxL2LRU)
-è sul canale YouTube della Fondazione.
+Il [video dell'esecuzione](https://www.youtube.com/watch?v=Ktu_MxL2LRU)
+è sul canale YouTube della Fondazione Isabella Scelsi.
 
 {% include gallery path="bottega/img/epitaffio-bertoncini/2022-09-28-epitaffio-mb-fis/ac/" %}

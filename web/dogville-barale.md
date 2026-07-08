@@ -7,10 +7,9 @@ image:
   caption: ""
 ---
 
-Le musiche di Pietro Barale per *Dogville* di Lars von Trier: il progetto
-per il diploma accademico di secondo livello in Musica Applicata. Al LEAP
-le riprese di clarinetto contrabbasso e Tempo Timpani Electromagnetic
-Pulse Oscillation, la composizione e i missaggi — marzo 2024.
+La musica di Pietro Barale per *Dogville* di Lars von Trier. Al LEAP
+le registrazioni di clarinetto contrabbasso e Tempo Timpani Electromagnetic
+Pulse Oscillation, la composizione e i missaggi.
 
 <!--more-->
 

@@ -7,9 +7,13 @@ image:
   caption: ""
 ---
 
-per relazioni di musicisti e ambiente
+opera-dispositivo di Francesco Ferracuti, per relazioni di musicisti e ambiente
+in _feedback_.
 
 <!--more-->
+
+Francesco condivide [nel suo spazio](/francesco/) i dettagli della sua _Interfantasia_.
+Il LEAP, Alice e Giuseppe hanno accolto e accompagnato il processo di messa in relazione, in ascolto.
 
 ## 19 marzo 2026
 

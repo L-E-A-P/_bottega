@@ -7,8 +7,8 @@ image:
   caption: ""
 ---
 
-*Jolt* di Giulio Romano De Mattia. Le sessioni di lavoro al LEAP, febbraio
-2024.
+*Jolt* di Giulio Romano De Mattia. Dalle *domeniche alla periferia dell'impero*,
+le sessioni di lavoro al LEAP, nei giorni feriali.
 
 <!--more-->
 

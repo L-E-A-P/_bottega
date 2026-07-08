@@ -11,6 +11,9 @@ image:
 
 <!--more-->
 
+il diario di bordo di [LAZZARO IN RIPRESA DI VENTI](/lazzaro/web/2025-09-22-goethe/).
+il processo di bottega in dialogo con il _mastro_ Mario Bertoncini.
+
 ## 19 giugno 2025 — prelievo
 
 {% include gallery path="bottega/img/mario-bertoncini/2025-06-19-prelievo/ac/" %}

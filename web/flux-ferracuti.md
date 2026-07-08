@@ -7,10 +7,13 @@ image:
   caption: ""
 ---
 
-FLUX è lo strumento-progetto di Francesco Ferracuti, sviluppato come progetto
-di laurea del triennio. In bottega, le sessioni di lavoro al LEAP.
+FLUX è lo strumento-progetto di aumentazione del flauto traverso di Francesco Ferracuti.
+In bottega, le sessioni di lavoro al LEAP.
 
 <!--more-->
+
+Sviluppato come progetto per il diploma accademico di primo livello, conseguito da Francesco
+presso il Conservatorio "Santa Cecilia" di Roma.
 
 ## 28 settembre 2023
 

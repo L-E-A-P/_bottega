@@ -8,7 +8,7 @@ image:
 ---
 
 Le sessioni di lavoro al LEAP attorno a *Infiniti Possibili* — il concerto
-del 1° marzo 2024 al Conservatorio di Musica S. Cecilia di Roma.
+del 1° marzo 2024 della Scuola di Musica Elettronica al Conservatorio _S. Cecilia_ di Roma.
 
 <!--more-->
 
@@ -17,6 +17,12 @@ Nono — raccoglie lavori recentissimi di studenti ed ex-studenti della
 Scuola di Musica Elettronica del Conservatorio. Aperto e chiuso da
 un'installazione sonora, il concerto s'inaugura con *Incontri di fasce
 sonore* di Franco Evangelisti, primo docente della Scuola.
+
+Il concerto, organizzato su impulso dei musicisti provenienti dalla Scuola di Musica Elettronica Romana,
+si può riconoscere retrospettivamente come l'innesco di quello che diverrà _z ⁻¹_: un polo di musicisti con l'intento
+di esplorare il processo compositivo come forma di riflessione e la musica come strumento di pensiero.
+
+Il LEAP ha sostenuto e collaborato insieme al BEAM — *Bottega ElettroAcustica Musicale*.
 
 ## 15 febbraio 2024 — aedi
 
