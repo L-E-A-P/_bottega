@@ -7,7 +7,8 @@ image:
   caption: ""
 ---
 
-*Jolt* di Giulio Romano De Mattia. Dalle *domeniche alla periferia dell'impero*,
+*Jolt* di Giulio Romano De Mattia. Dalle
+[*domeniche alla periferia dell'impero*](/domeniche/004-quarta-domenica/),
 le sessioni di lavoro al LEAP, nei giorni feriali.
 
 <!--more-->
