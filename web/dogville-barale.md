@@ -7,9 +7,9 @@ image:
   caption: ""
 ---
 
-La musica di Pietro Barale per *Dogville* di Lars von Trier. Al LEAP
-le registrazioni di clarinetto contrabbasso e Tempo Timpani Electromagnetic
-Pulse Oscillation, la composizione e i missaggi.
+Pietro Barale per *Dogville* di Lars von Trier. Al LEAP
+le registrazioni di clarinetto contrabbasso e _Tempo_ Timpani Electromagnetic
+Pulse Oscillation, i missaggi.
 
 <!--more-->
 

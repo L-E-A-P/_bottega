@@ -7,7 +7,7 @@ image:
   caption: ""
 ---
 
-un dispositivo elettroacustico dal ciclo *canto alla durata* di
+dispositivo elettroacustico dal ciclo *canto alla durata* di
 Giuseppe Silvi: attua la vibrazione delle corde di un violoncello mediante
 induzione elettromagnetica.
 

@@ -7,9 +7,17 @@ image:
   caption: ""
 ---
 
-*Trilobo* di Daniele Annese. Le sessioni di lavoro al LEAP, giugno 2024.
+percussione attuata e autocostruita di Daniele Annese, su quattro pelli
+di diverse dimensioni.
 
 <!--more-->
+
+Il fine settimana di bottega al LEAP, 1–2 giugno 2024. Mostrato fra
+«musica e desideri» alla
+[seconda domenica alla periferia dell'impero](/domeniche/002-seconda-domenica/),
+il Trilobo trova qui
+[struttura portante e cablaggi definitivi](/domeniche/005-quinta-domenica/):
+è già la quinta.
 
 ## 1 giugno 2024
 

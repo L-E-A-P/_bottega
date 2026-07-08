@@ -7,7 +7,7 @@ image:
   caption: ""
 ---
 
-*derive* su sculture di suono di Mario Bertoncini. Interventi e Note di Bottega.
+LAZZARO *in deriva* su sculture di suono di Mario Bertoncini. Interventi e Note di Bottega.
 
 <!--more-->
 
