@@ -24,7 +24,7 @@ Pratica in solo a *LEAP*.
 
 Insieme a Giulio Romano De Mattia (microfoni, altoparlanti, mixer) e Marta Sponzilli (danza), *Bagliori* presso *Condominio Fiore*, Roma.
 
-{% include gallery path="bottega/img/tlmr-di-gasbarro/2026-05-16/miriam-palladino/" %}
+{% include gallery path="bottega/img/tlmr-di-gasbarro/2026-05-16/miriam-paladino/" %}
 
 ## 7 maggio 2026
 
