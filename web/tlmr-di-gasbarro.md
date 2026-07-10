@@ -7,11 +7,12 @@ image:
   caption: ""
 ---
 
-Tube, Loudspeaker, Microphone, Roto-Toms (TLMR) è un assemblaggio di componenti estratti da Marco Di Gasbarro dalla rete di relazioni che tengono vivo il laboratorio.
+Tube, Loudspeaker, Microphone, Roto-Toms (TLMR) è un assemblaggio di componenti trovati da Marco Di Gasbarro nella rete di relazioni attive nel laboratorio.
 
 <!--more-->
 
-*TLMR* è composto da un tubo che risuona e guida le emissioni di uno speaker in direzione della pelle di un Roto-tom. Mentre da una parte si rivolge all'interno del tubo, dall'altra lo speaker risuona nella stanza. Un microfono spunta dal tubo, dall'estremità opposta all'altoparlante: i due trasduttori sono collegati da vari stadi di amplificazione che permettono l'evocazione di feedback elettroacustici. La risonanza è una proprietà che coinvolge tutti i componenti.
+*TLMR* è composto da un tubo che risuona e guida le emissioni di uno speaker in direzione della pelle di un Roto-tom. Mentre da una parte si rivolge all'interno del tubo, dall'altra lo speaker risuona nella stanza. Un microfono spunta dal tubo, dall'estremità opposta all'altoparlante: i due trasduttori sono collegati da vari stadi di amplificazione che permettono l'evocazione di feedback elettroacustici.
+
 Il percussionista Marco Di Gasbarro assiste il sistema nella sua configurazione corrente e lo sta sviluppando in un progetto che include un impianto audio e una danzatrice.
 
 ## 8 luglio 2026
