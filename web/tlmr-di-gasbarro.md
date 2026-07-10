@@ -23,7 +23,8 @@ Pratica in solo a *LEAP*.
 
 ## 16 maggio 2026
 
-Insieme a Giulio Romano De Mattia (microfoni, altoparlanti, mixer) e Marta Sponzilli (danza), *Bagliori* presso *Condominio Fiore*, Roma.
+Insieme a Giulio Romano De Mattia (microfoni, altoparlanti, mixer) e Marta Sponzilli (danza), *Bagliori* presso *Condominio Fiore*, Roma.   
+[Immagini prese dal video della prima esecuzione]
 
 {% include gallery path="bottega/img/tlmr-di-gasbarro/2026-05-16/miriam-paladino/" %}
 
@@ -53,17 +54,20 @@ Prove con Marta Sponzilli a *Fivizzano27*.
 
 ## 6 settembre 2024
 
-Sessione di studio con la batteria a *LEAP*.
+Sessione di studio con la batteria a *LEAP*.   
+[Immagini prese dal video della sessione]
 
 {% include gallery path="bottega/img/tlmr-di-gasbarro/2024-09-06/ac/" %}
-<!--
+
 ## 10 ottobre 2024
 
-Versione con i roto-tom per [LAZZARO 131010](https://www.leaphz.net/lazzaro/web/2024-07-13-roma/), al Goethe-Institut, Roma.
--->
+Versione con rullante e Roto-tom per [LAZZARO 131010](https://www.leaphz.net/lazzaro/web/2024-07-13-roma/), festival *elettroAQustica*, Conservatorio "A. Casella" di L’Aquila.   
+[Immagini prese dal video del concerto]
+
+{% include gallery path="bottega/img/tlmr-di-gasbarro/2024-10-10/federico-tedesco/" %}
 
 ## 13 luglio 2024
 
-Versione con la batteria per [LAZZARO 130724](https://www.leaphz.net/lazzaro/web/2024-07-13-roma/), al Goethe-Institut, Roma.
+Versione con la batteria per [LAZZARO 130724](https://www.leaphz.net/lazzaro/web/2024-07-13-roma/), Goethe-Institut Rom.
 
 {% include gallery path="bottega/img/tlmr-di-gasbarro/2024-07-13/mi/" %}
